@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Question 12</title>
+
+</head>
+
+<body>	
+	
+<h3>Question 12- Collecting information from form elements and showing result in a new window.</h3>
+	<form>
+		<input type="text" id="f" placeholder="First name">&nbsp;&nbsp;
+		<input type="text" id="l" plceholder="Last name"><br><br>		
+		<input type="email" id="emAdd" placeholder="Email address"><br><br>
+		<input type="password" id="p" plceholder="Your password"><br><br>
+		<button onClick="ow(); return false;">Open a new Window</button>
+	</form>
+	
+<script>
+	
+	function ow(){
+		var fN = document.getElementById('f').value;
+		var lN = document.getElementById('l').value;
+		var emilAddress = document.getElementById('emAdd').value;
+		var nWindow = window.open("","","height=300, width=500");
+		
+		nWindow.document.write("<div>");
+		nWindow.document.write("<p>Full name : ");	
+		nWindow.document.write(fN);		
+		nWindow.document.write(" ");		
+		nWindow.document.write(lN);		
+		nWindow.document.write("</p>");		
+		nWindow.document.write("<p>");
+		nWindow.document.write("Email address : ");
+		nWindow.document.write(emilAddress);
+		nWindow.document.write("</p>");
+		nWindow.document.write("</div>");	
+	}
+
+	
+</script>
+</body>
+</html>

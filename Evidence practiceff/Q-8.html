@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<h3>Question 8-sorting array values</h3>
+	<form>
+		<input type="text" id="userInput" placeholder="Insert one number at a time">&nbsp;
+		<input type="button" onClick="sort()" value="Sort">
+		<br><br>
+		<input type="text" id="sorted">&nbsp;
+	</form>
+
+	<script>
+	
+		function sort(){
+			var arr =	document.getElementById('userInput').value.split(",").map(Number);
+        for (i = 0; i < arr.length; i++)
+        {
+            for (j = 0; j < arr.length; j++)
+            {
+                if (arr[j] > arr[j + 1])
+                {
+                    check = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = check;
+                }
+                else
+                {
+                    continue;
+                }
+            }
+           
+        }
+         document.getElementById('sorted').value=arr;
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Question 12</title>
+
+</head>
+
+<body>	
+	
+	<form name="login_info">
+		<label><b>Login info</b></label>
+		<br><br>
+		<input type="text" id="name" placeholder="Name">
+		<br><br>
+		<input type="email" id="mail" placeholder="Email">
+		<br><br>
+		<input type="password" id="password" placeholder="Password">
+		<br><br>
+		<label><b>Gender</b></label>
+		<br><br>
+		<input type="radio" name="gender" value="male">Male
+		<br>
+		<input type="radio" name="gender" value="female">Female
+		<br>
+		<input type="radio" name="gender" value="others">Others
+		<br><br>
+	</form>
+	<form name="subjects">
+		<label><b>Preference</b></label>
+		<br><br>
+		<input type="checkbox" class="subject" name="J2EE" value="Java">J2EE
+		<br>
+		<input type="checkbox" class="subject" name="C#" value=".Net">C#
+		<br>
+		<input type="checkbox" class="subject" name="NT" value="Networking">NT
+		<br>
+		<input type="checkbox" class="subject" name="GAVE" value="Graphics_design">GAVE
+		<br>
+		<input type="checkbox" class="subject" name="WDPF" value="Web_design">WDPF
+		<br>
+		<input type="checkbox" class="subject" name="DDD" value="Database_design">DDD
+		<br><br>		
+	</form>
+	
+	<button onClick="nw()">Click</button>
+	
+	
+	
+<script>
+	
+	function nw() {
+		var n = document.getElementById('name').value;
+		var m = document.getElementById('mail').value;
+		var p = document.getElementById('password').value;
+		
+		//Value of radio button
+		var r = document.querySelector('input[name="gender"]:checked').value;		
+		
+		//Value of checkbox
+		
+		var s =[];
+		var check = subjects.elements;
+		var length = subjects.elements.length;					
+		for(i=0;i<length;i++){
+			if(check[i].checked){
+				s.push(check[i].value);
+			}
+		}		
+		s=s.join(", ");	
+		
+		
+		
+		var ow = window.open("","Form","height=300px; width=500px;");
+
+		ow.document.write(
+			
+			"<h4>Name: </h4> <span>"+n+"</span>"+
+			"<h4>Email: </h4> <span>"+m+"</span>"+
+			"<h4>Password: </h4> <span>"+p+"</span>"+
+			"<h4>Gender: </h4> <span>"+r+"</span>"+
+			"<h4>Subject: </h4> <span>"+s+"</span>"
+			
+		);	
+	}
+	
+	
+</script>
+</body>
+</html>

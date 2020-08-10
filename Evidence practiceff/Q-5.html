@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Question 5</title>
+</head>
+
+<body>
+
+	
+	
+	
+<h3>Question 5- Finding the factorial value of a number</h3>
+	<form>
+		<input type="text" id="userInput" placeholder="Insert a number">&nbsp;
+		<input type="button" onClick="fNum()" value="Check">
+		<br><br>
+		<input type="text" id="fct">&nbsp;
+		
+	</form>
+
+	<script>		
+		function fNum(){	
+		   var num = document.getElementById('userInput').value;
+		   var f = parseFloat(num);
+		   var factorial=1;
+       
+            for (i = 1; i <=f; i++)
+            {
+                factorial*=i 				
+            }			
+				document.getElementById('fct').value=factorial; 				
+	}
+</script>
+</body>
+
+</html>
+

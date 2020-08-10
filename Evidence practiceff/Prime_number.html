@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	
+</head>
+
+<body>
+	
+	<p id="out1"></p>
+	
+	
+	
+	<script>
+	
+		function prime(){ 
+	var inp=prompt('Plese input your number');
+	//var inp=document.getElementById('').value.map(Number);
+		
+	
+		if(inp<=1){
+			document.getElementById('out1').innerHTML="This Number is not Prime";
+			return;
+		}
+		
+		
+	for(i=2;i<=inp/2;i++){
+		if(inp%i==0){
+			document.getElementById('out1').innerHTML="This Number is not Prime";
+			break;
+		}else {
+			document.getElementById('out1').innerHTML="This Number is Prime";
+			
+		}
+	}
+	
+		}
+	
+	prime()
+	
+	</script>
+</body>
+</html>

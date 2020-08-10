@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Question 15</title>
+</head>
+
+<body>
+	
+	<h3>Discount calculation</h3>
+	<input type="text" id="num" value="" placeholder="The amount">&nbsp;<button onClick="dis()">Click</button>
+	<br><br>
+	<input type="text" id="dc" value="" placeholder="Discounted value">
+	<br><br>
+	
+	<script>
+		
+		function dis(){
+			var num= document.getElementById('num').value;
+			var n= parseInt(num);
+			var dv;
+			dv= n>=100 && n<=300 ? dv=n*0.9 : 
+			dv= n>=301 && n<=700 ? dv=n*0.85 : 
+			dv= n>=701 && n<=1000 ? dv=n*0.8 : 
+			dv= n>1000  ? dv=n*0.75 : n;			
+			document.getElementById('dc').value=dv;
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	
+	<p id="ppp"></p>
+	
+	
+	
+	<script >
+		function prri(){ 
+	var arr=prompt('please input your number');
+		
+		
+		if(arr<=1){ 
+			document.getElementById('ppp').innerHTML="This is not a prime number";
+						   return;
+						   }
+	
+	for(i=2;i<=arr/2;i++){
+		if(arr%i==0){
+			document.getElementById('ppp').innerHTML="This is not a prime number";
+			break;
+		}else {
+			document.getElementById('ppp').innerHTML="This is a prime number";
+		}
+	}
+	
+		}
+		
+		prri();
+	
+	
+	
+	
+	</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Question 11</title>
+
+</head>
+
+<body>	
+	
+<h3>Question 11-Opening and closing new window.</h3>
+
+<button onClick="ow()">Open a new Window</button>&nbsp;
+<button onClick="cw()">Close the new Window</button>&nbsp;
+
+<script>
+	var nWindow;
+
+	function ow(){
+		nWindow=window.open("","Form_window","height=200px; width=200px;");
+		nWindow.document.write("<form>");
+		nWindow.document.write("<input type='text' name='firstName' placeholder='First name'>");
+		nWindow.document.write("<input type='text' name='lastName' placeholder='Last name'>");
+		nWindow.document.write("<form>");	
+	}
+	function cw(){
+		nWindow.close();
+	}
+	
+</script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Question 3</title>
+</head>
+
+<body>
+
+<h3 id="demo"></h3>
+
+
+<script>
+
+            ///////////////////////////////////////////
+            //                 Syntax 1             //
+            //////////////////////////////////////////
+
+   function mxmn(){
+
+   var text = "" ;
+
+   var num=prompt("Please insert your numbers seperate by comma ','").split(",").map(Number);
+
+   var n=num.length;   
+
+       for (var i = 1; i < n; i++) {
+         
+           for (var j = 0; j-1 < n; j++) {
+
+               if (num [j] > num [j + 1]) {
+
+                   var c = num [j + 1];
+
+                       num [j + 1] = num [j];
+
+                       num [j] = c;
+
+               }
+
+           }
+
+       }
+
+    
+       document.getElementById('demo').innerHTML=text+="The minimum value is " + num[0] + " and the maximum value is " + num[n-1] + ".";
+   }
+
+   mxmn();
+
+
+
+
+            ///////////////////////////////////////////
+            //                 Syntax 2             //
+            //////////////////////////////////////////
+
+
+
+/*function mxmn(){
+    var max = 0;
+    var min = 0;
+    var text = "";
+    for (i=0;i<3;i++){   
+
+        n = prompt("Please enter your numbers");
+         
+        if (max<n){     // For finding the maximum number
+            max=n;
+        }    
+         
+        if (min==0){     // For finding the minimum number
+            min=n;
+        }
+        else if (min>n) {
+            min = n;
+        }   
+    }
+
+document.getElementById('demo').innerHTML=text+="The maximum number is "+max+" and the minimum number is "+min;
+}
+mxmn();*/
+</script>
+
+</body>
+</html>

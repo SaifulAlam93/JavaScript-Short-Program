@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<form>
+	<input type="text" name="ar" value="">&nbsp;
+	<input type="button" onClick="arSum()" value="Click">
+	</form>
+	<br>
+	<div id="result" style="border: 1px solid black;">Result</div>
+	
+	
+	<script>
+		function arSum(){
+		var arr=document.getElementsByName('ar').value.split(',').map(Number);			
+		document.getElementById('result').innerHTML=arr;
+			
+		}
+		function change(){
+			var Q7= parent.frames[1].document.forms[0].ar.value;
+			parent.frames[0].document.bgColor='red'
+		}
+	</script>
+	<button onClick="change()">Change</button>
+</body>
+</html>

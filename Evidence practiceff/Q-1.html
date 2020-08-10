@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Question 1</title>
+</head>
+
+<body>
+	<h3>Question 1- Odd/even Number</h3>
+	<form>
+		<input type="text" id="num" placeholder="Put the number">&nbsp;<input type="text" id="result" placeholder="Result">
+		<br>
+		<input type="button" onClick="oddEven()" value="Justify">
+	</form>
+	<script>
+	
+		 
+		 function oddEven(){
+			 var num= document.getElementById('num').value;
+			 var oden=parseInt(num);
+			 if(oden%2==0){
+				 document.getElementById('result').value='This is an even number';
+			 }
+			 else{
+				 document.getElementById('result').value='This is an odd number';
+			 }
+		 }
+		</script>
+</body>
+
+</html>
+

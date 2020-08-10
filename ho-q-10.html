@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+		
+</head>
+
+<body>
+	<!--Email Address:<input type="email" id="emaill">
+	<br><br>
+	<p id="p1"></p>
+	<br>
+	<br>
+	Password:<input type="password" id="pass_w">
+	<br><br>
+	<p id="aaa"></p>
+	<br><br>-->
+<script>
+	/*	function ema(){  
+	var emm=document.getElementById('em').value.split("");
+	var pasw=document.getElementById('pass').value.split("");
+		
+		
+		if(emm.includes("@") && emm.includes(".")){
+			document.getElementById('p1').innerHTML="This Email isValid Email";	
+		}else{
+			
+			document.getElementById('p1').style.color('red');
+			document.getElementById('p1').innerHTML="Invalid Email";
+		}
+	
+			
+			
+			
+		if(pasw.length>7){
+			document.getElementById('aaa').innerHTML="Valid password";	
+		}
+	else{		
+		document.getElementById('aaa').style.color('red');
+		document.getElementById('aaa').innerHTML="Invalid Password";
+	}
+	}
+	*/
+	
+</script>	
+	
+email:<input type="email" id="emaill" >
+	<br>
+	<br>
+<p id="pass"></p>
+	<br><br>
+passs:<input type="password" id="password">
+	<br><br>
+	<p id="pasw"></p>
+	<button type="submit" onClick="val()">sub</button>
+	
+	
+<script>
+function val(){
+	var aa1=document.getElementById('emaill').value.split("");
+	var bbb=document.getElementById('password').value.split("");
+	
+	
+	if (aa1.includes("@") && aa1.includes(".")){
+		document.getElementById('pasw').style.color='green';
+		document.getElementById('pass').innerHTML="Valid Email";
+	}else{
+		document.getElementById('pass').style.color='red';
+		document.getElementById('pass').innerHTML="Invalid Email";
+	}
+	
+	
+	if(bbb.length>7){
+		document.getElementById('pasw').style.color='green';
+		document.getElementById('pasw').innerHTML="Valid pass";
+		
+	}else{
+		document.getElementById('pasw').style.color='red';
+		document.getElementById('pasw').innerHTML="Invalid Passow";
+	}
+	
+	
+	
+	
+	
+	
+}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</body>
+</html>

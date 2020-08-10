@@ -1,0 +1,44 @@
+ <!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Question 4</title>
+</head>
+
+<body>
+	<h3>Question 4- Checking prime numbers.</h3>
+	<form>
+		<input type="text" id="userInput" placeholder="Insert a number">&nbsp;
+		<input type="button" onClick="pNum()" value="Check">
+		<br><br>
+		<h5>Result</h5>
+		<input type="text" id="pr">
+		<br>
+		<h5>Divisors</h5>
+		<input type="text" id="d" value="">
+		
+	</form>
+
+	<script>		
+		function pNum(){	
+		   var num = document.getElementById('userInput').value;
+		   var p = parseFloat(num);
+		   var txt= ""
+       
+            for (i = 2; i <=p/2; i++)
+            {if(i=1){
+				document.getElementById('pr').value="This is not a prime number.";}
+			else if(p%i==0) {	
+				document.getElementById('d').value=txt+=i+",";
+					}
+            }			
+			if(d.value===""){
+			document.getElementById('pr').value="This is a prime number."; 			
+				}
+			else{
+				document.getElementById('pr').value="This is not a prime number.";
+			}
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Question 6</title>
+</head>
+
+<body>	
+	
+	<h3 id="h"></h3>
+
+	<div id="t"></div>
+
+	<script>		
+		
+		var n = prompt("Please insert less than 16 digits");
+
+		var text = "";
+
+		document.getElementById('h').innerHTML= "The table number of '" + n + "' is displayed below."
+
+		for (i=0;i<=10;i++){
+			document.getElementById('t').innerHTML= text+=n + " x " + i + " = " + (n*i) + "<br>";
+		}
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Question 7</title>
+</head>
+
+<body>
+
+	
+	
+	
+<h3>Question 7- Creating an array and its sum</h3>
+	<form>
+		<input type="text" id="userInput" placeholder="Insert numbers with comma ','"><br>		
+		<h5>The Array</h5>
+		<input type="text" id="actr">
+		<h5>The sum</h5>
+		<input type="text" id="asum">
+		<input type="button" onClick="arr()" value="Justify">
+	</form>
+	
+<script>
+	 	
+		
+	
+	 function arr(){			 
+		 var aaa=document.getElementById('userInput').value.split(",").map(Number);
+		 document.getElementById('actr').value=""+"["+aaa+"]"
+       	 var sum=0;
+		 for(i=0;i<aaa.length;i++){
+			 sum+=aaa[i];
+		 }
+         document.getElementById('asum').value="The total is "+sum; 
+	 }
+</script>
+</body>
+
+</html>

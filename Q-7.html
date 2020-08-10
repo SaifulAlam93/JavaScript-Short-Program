@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Question 7</title>
+
+</head>
+
+<body>
+		
+	
+		
+	<input type="text" id="inp"></input> 
+
+	&nbsp; 
+	
+	<button onclick="arr ()">Display</button>
+
+	<br>
+
+	<h4 id="da"></h4>
+
+	<br>
+
+	<h4 id="dt"></h4>	
+
+
+
+
+	<script>		
+		
+		
+		 function arr () {
+
+		 	var n = document.getElementById('inp').value.split(",").map(Number);		 	
+
+		 	document.getElementById('da').innerHTML = "The array is " + "[" + n + "]";
+
+		 	var sum = 0;
+
+		 	for (var i = 0; i < n.length; i++) {
+		 		sum+=n[i];
+		 	}
+
+		 	document.getElementById('dt').innerHTML = "The sum of the array is " + sum;
+		 	
+		 }
+
+
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Question 13</title>
+<script>
+//	function dClock(){		
+//		var d = new Date();
+//		var h = d.getHours();
+//		console.log(h);
+//		var m = d.getMinutes();
+//		var s = d.getSeconds();
+//		var session=h>12 ? "PM":"AM";
+//		h = h>12 ? h-=12 : h;		
+//		h = h==0 ? h=12 : h;		
+//		h = m<0 ? m="0"+m : m;		
+//		h = h<0 ? h="0"+h : h;		
+//		document.getElementById('showClock').innerHTML=h+":"+m+":"+s+" "+session;
+//		var t = setTimeout(function(){dClock();},500)
+//	}
+	var aaa= setInterval(function (){myClock();}, 1000);
+	function myClock(){
+		var d = new Date();
+		document.getElementById('showClock').innerHTML= d.toLocaleTimeString();
+	}	
+</script>
+</head>
+<body onLoad="dClock()">
+	<h3>Question 13- Digital clock.</h3>
+	<div id="showClock" style="font-size: 600; text-align: center; color: mediumblue"></div>
+</body>
+</html>

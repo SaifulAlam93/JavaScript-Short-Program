@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>	
+<body>
+	
+				
+      <button onClick="img()" >JAdu Jadu</button>
+<div id="div1" style="margin: auto ;height: 500px; width: 500px; background-color: crimson">img img img</div>
+				
+	
+	
+	<script>
+	    var imgAll=[ "1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"]
+     	var n=0;
+		
+		
+		
+	    function img(){
+		 	document.getElementById("div1").style.backgroundImage="url("+imgAll[n++]+")";
+		
+		  if(n>4){n=0}else{   document.getElementById("div1").style.backgroundImage="url("+imgAll[n++]+")";        }
+		
+	     }	
+		
+    </script>
+	
+	</body>
+</html>
+	
+

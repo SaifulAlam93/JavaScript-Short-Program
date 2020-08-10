@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+
+
+<script>
+	
+	
+	
+	
+	
+	var imgAll=[ "1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"]
+    
+    var num_img = 5;
+    var cur_img = 1;
+
+  function  goback() {
+
+    if(cur_img>5)
+   {
+
+    cur_img = cur_img - 1;
+   }else{
+    alert("This is the first image");
+   }
+
+
+}
+
+function gofwd(){
+
+    if(cur_img < num_img){
+
+    cur_img = cur_img + 1;
+   }else{
+      alert("This is the last image");
+      }
+
+
+}
+
+
+</script>
+
+
+</script>
+
+
+
+
+</head>
+<body>
+
+<div style="border: solid 12px blue; width: 500px; height: 500px;">
+<img src="Images/lab1.jpeg" alt="lab1" height="500" width="500">
+</div><br>
+<input type="button" value="PREVIOUS" id="prev" name="prev" style="color:blue" onclick="goback();" >
+
+<input type="button" value="NEXT" id="next" name="next" style="color:blue" onclick="gofwd();" >
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	
+	<script>
+		function createWin(){
+			var newWin= window.open("","W3School","height=200px width=200px");
+			newWin.document.write("<html>");		
+			newWin.document.write("<body>");			
+			newWin.document.write("<div>");			
+			newWin.document.write("Name 1:");			
+			newWin.document.write(document.forms[0].elements[0].value);		
+			newWin.document.write("</div>");			
+			newWin.document.write("</body>");			
+			newWin.document.write("</html>");
+		}
+	</script>			 
+	
+</head>
+
+<body>
+	<form>
+		<input type="text" value="">
+		<button onClick="createWin(); return false">Click</button>
+	</form>
+	
+</body>
+</html>

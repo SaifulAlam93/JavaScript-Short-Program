@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Question 10</title>
+</head>
+
+<body>	
+	
+<h3>Question 10- Email validation.</h3>
+
+	<h5>The mail address</h5>
+	<input type="text" id="mail" placeholder="Your mail address">&nbsp;
+	<input type="button" onClick="check()" value="Verify">
+	<br><br>
+	<p id="vatrt"></p>
+
+	
+<script>
+	 function check(){			 
+		 var input=document.getElementById('mail').value;
+		 console.log(input);
+       	 var atright=input.indexOf('@');
+       	 var dot=input.indexOf('.');
+		 if(atright==-1||dot==-1){
+			 document.getElementById('vatrt').innerHTML="Invalid mail address.";
+		 }
+		 else{
+			document.getElementById('vatrt').innerHTML="Valid mail address.";
+		 }
+		 
+	 }
+</script>
+</body>
+</html>

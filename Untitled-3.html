@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+Email: <input type="text" id="email" placeholder="Enter your email address">
+	<p id="demo" ></p> 
+Password: <input type="password" id="pass_w" placeholder="Enter your password">
+	<p id="demo1" ></p><br/>
+<input type="submit" onclick="myf()" />
+
+
+
+
+		<script type="text/javascript">
+			function myf(){
+			var val = document.getElementById('email').value.split("");
+			var pass=	document.getElementById('pass_w').value.split("");
+			
+			if (val.includes("@") && val.includes(".")) {
+				document.getElementById('demo').style.color= 'green';
+				document.getElementById('demo').innerHTML="This Email is valid <br/>";
+			}else{
+				document.getElementById('demo').style.color= 'red';
+				document.getElementById('demo').innerHTML="Invalid Email <br/>";
+			}
+				
+			if (pass.length>7) {
+				document.getElementById('demo1').style.color='green'
+				document.getElementById('demo1').innerHTML="password is strong! <br/>";
+				
+				
+				
+			}
+			else{
+				document.getElementById('demo1').style.color='red'
+				document.getElementById('demo1').innerHTML="password is too short!! <br/>";
+			}
+			}
+		</script>
+</body>
+</html>

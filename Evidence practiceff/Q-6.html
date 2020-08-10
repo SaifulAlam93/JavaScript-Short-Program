@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Question 6</title>
+</head>
+
+<body>	
+	
+<h3>Question 6- Finding the table numbers of a number</h3>
+	<form>
+		<input type="text" id="userInput" placeholder="Insert a number">&nbsp;
+		<input type="button" onClick="tNum()" value="Check">
+		<br><br>
+		<div id="tvl" style="border: 1px solid black; width: 200px; height: auto"></div>
+		
+	</form>
+
+	<script>		
+		function tNum(){	
+		   var num = document.getElementById('userInput').value;
+		   var tv = parseInt(num);
+			var value;
+		   var txt="";
+       
+            for (i = 1; i <=tv; i++)
+            {
+				value= tv*i
+               document.getElementById('tvl').innerHTML=txt+=tv+" X "+i+" = "+value+"<br>"; 			
+            }									
+	}
+</script>
+</body>
+
+</html>

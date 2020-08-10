@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Question 9</title>
+
+</head>
+
+<body>	
+	
+	<h1>Opening a closing a new window.</h1>
+
+	<br>
+
+	<button onclick="ow()">Open Window</button>
+
+	&nbsp;
+
+	<button onclick="cw()">Close Window</button>
+
+
+<script>
+	
+	function ow (){
+
+		nw = window.open("","Form","width=400px; height=300px;");
+
+		nw.document.write("<h1> This is the new window.");
+		
+	}
+
+	function cw () {
+
+		nw.close();
+
+	}
+	
+</script>
+</body>
+</html>

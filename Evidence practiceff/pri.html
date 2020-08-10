@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+
+<input type="number" id="numm1">
+<button type="button" onClick="prim()">click</button>
+<p id="out2"></p>
+
+<p id="out3"></p>
+<p id="out4"></p>
+<script>
+function prim(){
+var num1=document.getElementById('numm1').value;
+num1=parseInt(num1);  
+/* 
+var isPrime=true;
+var divisor="";
+for(i=2;i<=num1/2;i++){
+	 if(num1%i==0)
+		{
+	isPrime=false;	
+	
+	divisor+= ("1"+","+i);
+	
+			
+		}	
+}
+
+
+if(num1===1){
+	document.getElementById('out3').innerHTML="this is not a prime number.";
+	}
+ else 
+  if(isPrime)
+		{
+			document.getElementById('out3').innerHTML="this is  a prime number.";
+		}else {
+			document.getElementById('out3').innerHTML="this is not a prime number.<br/>divisors :"  +divisor;
+			}
+}*/
+ if(num1<1){
+		
+		document.getElementById('out3').innerHTML="this is not a prime number.";
+		
+		return;
+		
+		}
+	
+	
+        
+
+
+
+
+if(num1===1){
+	document.getElementById('out3').innerHTML="this is not a prime number.";
+	return;
+	}
+
+
+
+for(i=2;i<=num1/2;i++){
+	
+	    if(num1%i==0)
+		{
+			document.getElementById('out3').innerHTML="this is not a prime number.";
+		break;
+		
+		}
+		
+		else{
+			document.getElementById('out3').innerHTML="this is a prime number.";
+			document.getElementById('out3').innerHTML="this is a prime number.";}
+		}
+}
+
+
+
+
+</script>
+
+</body>
+</html>

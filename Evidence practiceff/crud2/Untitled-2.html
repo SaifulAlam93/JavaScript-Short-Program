@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<div style="width:80%;margin: auto;background-color: bisque">
+  <div style="margin: auto;background-color: antiquewhite;  text-align:center;">
+    <form name="sform"  style="  
+							   display: flex;
+                               justify-content: center;
+     ">
+      <table>
+        <tr>
+          <td>First Name</td>
+          <td><input type="text" name="fname"></td>
+          <td>Last Name</td>
+          <td><input type="text" name="lname"></td>
+        </tr>
+        <tr>
+          <td>District</td>
+          <td><input type="text" name="district"></td>
+          <td>Age</td>
+          <td><input type="text" name="age"></td>
+        </tr>
+      
+      </table>
+		
+		
+    </form>
+	  
+	  <button style="width: 200px; margin: auto" onClick="addStudent(); return false;">ADD</button>
+	  
+  </div>
+  <div id="tableContainer"   style="display: flex;
+                               justify-content: center;margin-top: 50px;background-color: antiquewhite">
+    <table id="stable" style="width: 80%">
+      <tr>
+        <th>First Name </th>
+        <th>Last Name </th>
+        <th>Distict </th>
+        <th>Age </th>
+		  <th>Delete </th>
+      </tr>
+    </table>
+  </div>
+</div>
+<script src="script2.js"></script>
+</body>
+</html>

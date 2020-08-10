@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script>
+//=============Q-1================
+
+
+
+
+/*var num=prompt('input your number',"");
+
+ num=parseInt(num);
+ 
+ if(num%2==0){
+	 document.write("This Number is Even");
+ }else
+ {document.write("This Number is Odd");}
+*/
+
+
+//12,45,78,1,2,5
+
+
+
+
+</script>
+</head>
+
+<body>
+<div>============Q-2==============</div>
+<!--
+<input type="text" id="num" name="num" >
+<button type="button" onClick="cal()">click</button>
+<p id="num2"></p>
+-->
+<script>
+/*function cal(){
+var arr=document.getElementById('num').value.split(",").map(Number);
+		var num1;
+		for(i=0;i<arr.length;i++){
+			if(num1===undefined){
+				num1=arr[i];
+			}else if(arr[i]>num1){
+				num1=arr[i];
+				}
+		}
+document.getElementById('num2').innerHTML ="The larest number is "+num1;  
+}*/
+</script>
+
+<!--<div>============ OR=Q-2==============</div>
+<input type="text" id="num" name="num" >
+<button type="button" onClick="cal2()">click</button>
+<div id="num2"></div>
+-->
+<script>
+/*function cal2(){
+var arr=document.getElementById('num').value.split(",").map(Number);
+var a=arr[0];
+var b=arr[1];
+var c=arr[2];
+
+if(a>b && a>c){
+	document.write('The largest number is' +a+'.');} 
+	else if(b>c && b>a){
+		document.write('The largest number is' +b+'.');} 
+		else {document.write('The largest number is' +c+'.');} 
+		
+
+}*/
+
+</script>
+
+
+
+
+
+
+
+<br>
+<br/>
+<br/>
+<br/>
+<div>Question No 3</div>
+
+
+<!--<input type="text" id="qq3" placeholder="input your number">
+<button type="button" onClick="que3()">click</button>
+<p id="out1"></p>
+<p id="out2"></p>
+<p id="out3"></p>-->
+
+<script>
+/*
+document.write(arr);
+function que3(){
+var arr=document.getElementById('qq3').value.split(",").map(Number);
+
+var lar;
+var sml;
+for(i=0;i<arr.length;i++){
+	
+	if(lar===undefined){
+		lar=arr[i]}
+		else if(
+			arr[i]>lar){lar=arr[i]}
+      
+	  }
+	  
+	  
+for(j=0;j<arr.length;j++){
+	if(sml===undefined){
+		sml=arr[j]
+		
+		}
+		else if(arr[j]<sml){
+			sml=arr[j]
+			}
+	}
+	
+	
+ document.getElementById('out1').innerHTML ="The largest number is "+lar+"<br>";	
+ document.getElementById('out2').innerHTML ="The smallest number is "+sml;	  
+	  
+	//document.getElementById('out3').innerHTML =sml;  
+	  
+	  
+     }
+*/
+
+</script>
+
+
+
+
+<br/>
+<br/>
+<br/>
+<div> ================Q-4==============</div>
+<input type="number" id="numm1">
+<button type="button" onClick="prim()">click</button>
+<p id="out2"></p>
+
+<p id="out3"></p>
+<p id="out4"></p>
+<script>
+function prim(){
+var num1=document.getElementById('numm1').value;
+var num2;
+
+for(i=2;i<=num1/2;i++){
+	if(num1==1){
+		document.getElementById('out4').innerHTML="this is not a prime number.";
+		}else if(num1%i==0)
+		{document.getElementById('out2').innerHTML="this is not a prime number.";}
+		else{document.getElementById('out3').innerHTML="this is a prime number.";}
+		}
+}
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

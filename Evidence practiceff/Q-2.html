@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Question 2</title>
+</head>
+
+<body>
+	
+	<h3>Question 2-Finding the largest number</h3>
+	<form>
+		<input type="text" id="userInput" placeholder="Insert the numbers">&nbsp;		
+	
+		<input type="text" id="max">&nbsp;<input type="button" onClick="lgnum()" value="Justify">
+	</form>
+	
+<script>
+	 	
+		
+	
+	 function lgnum(){	
+		 
+		 var arr=document.getElementById('userInput').value.split(",").map(Number);	
+       	 var    check = 0;
+            for (j = 0; j < arr.length; j++)
+            {
+                if (arr[j] > arr[j + 1])
+                {
+                    check = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = check;					
+                }
+                else
+                {
+                    continue;
+                }
+            }
+           document.getElementById('max').value="The larest number is "+arr[arr.length-1];  
+	 }
+</script>
+</body>
+</html>
